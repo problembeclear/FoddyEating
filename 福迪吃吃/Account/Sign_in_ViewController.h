@@ -10,7 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Sign_in_ViewController : UIViewController
-
+<
+UISceneDelegate
+>
 @end
 
 NS_ASSUME_NONNULL_END
