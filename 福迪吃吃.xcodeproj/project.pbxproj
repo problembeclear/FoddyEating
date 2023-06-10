@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0225734E71E530B636D81C /* libPods-福迪吃吃.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF39B4D83D9BDD4E324C7D6B /* libPods-福迪吃吃.a */; };
+		40682AF32A320DFC0014DDB7 /* Sign_in_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40682AF22A320DFC0014DDB7 /* Sign_in_ViewController.m */; };
+		40682AF62A320E0D0014DDB7 /* Sign_up_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40682AF52A320E0D0014DDB7 /* Sign_up_ViewController.m */; };
+		40682AFA2A3223DF0014DDB7 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 40682AF92A3223DF0014DDB7 /* background.png */; };
+		40C75A962A33307300B66207 /* FoddyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C75A952A33307300B66207 /* FoddyController.m */; };
+		40C75A992A33309800B66207 /* FoddyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C75A982A33309800B66207 /* FoddyView.m */; };
+		40C75A9B2A3334BF00B66207 /* xiangyoujiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C75A9A2A3334BF00B66207 /* xiangyoujiantou.png */; };
+		40C75A9E2A33659900B66207 /* state.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C75A9D2A33659900B66207 /* state.png */; };
+		40C75AA02A3365F100B66207 /* weiyang.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C75A9F2A3365F100B66207 /* weiyang.png */; };
+		40C75AA22A3365F500B66207 /* zhuangban.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C75AA12A3365F500B66207 /* zhuangban.png */; };
+		40C75AA42A3365F900B66207 /* haoyou.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C75AA32A3365F900B66207 /* haoyou.png */; };
+		40C75AA62A33673A00B66207 /* tuichu.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C75AA52A33673A00B66207 /* tuichu.png */; };
+		40CEE2D12A308835004CED4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CEE2D02A308835004CED4B /* AppDelegate.m */; };
+		40CEE2D42A308835004CED4B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CEE2D32A308835004CED4B /* SceneDelegate.m */; };
+		40CEE2DA2A308835004CED4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CEE2D82A308835004CED4B /* Main.storyboard */; };
+		40CEE2DC2A308836004CED4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CEE2DB2A308836004CED4B /* Assets.xcassets */; };
+		40CEE2DF2A308836004CED4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CEE2DD2A308836004CED4B /* LaunchScreen.storyboard */; };
+		40CEE2E22A308836004CED4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CEE2E12A308836004CED4B /* main.m */; };
+		40CEE2EC2A308836004CED4B /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CEE2EB2A308836004CED4B /* ____Tests.m */; };
+		40CEE2F62A308836004CED4B /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CEE2F52A308836004CED4B /* ____UITests.m */; };
+		40CEE2F82A308836004CED4B /* ____UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CEE2F72A308836004CED4B /* ____UITestsLaunchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40CEE2E82A308836004CED4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40CEE2C42A308835004CED4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40CEE2CB2A308835004CED4B;
+			remoteInfo = "福迪吃吃";
+		};
+		40CEE2F22A308836004CED4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40CEE2C42A308835004CED4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40CEE2CB2A308835004CED4B;
+			remoteInfo = "福迪吃吃";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40682AF12A320DFC0014DDB7 /* Sign_in_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sign_in_ViewController.h; sourceTree = "<group>"; };
+		40682AF22A320DFC0014DDB7 /* Sign_in_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sign_in_ViewController.m; sourceTree = "<group>"; };
+		40682AF42A320E0D0014DDB7 /* Sign_up_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sign_up_ViewController.h; sourceTree = "<group>"; };
+		40682AF52A320E0D0014DDB7 /* Sign_up_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sign_up_ViewController.m; sourceTree = "<group>"; };
+		40682AF92A3223DF0014DDB7 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		40C75A942A33307300B66207 /* FoddyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoddyController.h; sourceTree = "<group>"; };
+		40C75A952A33307300B66207 /* FoddyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoddyController.m; sourceTree = "<group>"; };
+		40C75A972A33309800B66207 /* FoddyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoddyView.h; sourceTree = "<group>"; };
+		40C75A982A33309800B66207 /* FoddyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoddyView.m; sourceTree = "<group>"; };
+		40C75A9A2A3334BF00B66207 /* xiangyoujiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiangyoujiantou.png; sourceTree = "<group>"; };
+		40C75A9D2A33659900B66207 /* state.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state.png; sourceTree = "<group>"; };
+		40C75A9F2A3365F100B66207 /* weiyang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weiyang.png; sourceTree = "<group>"; };
+		40C75AA12A3365F500B66207 /* zhuangban.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zhuangban.png; sourceTree = "<group>"; };
+		40C75AA32A3365F900B66207 /* haoyou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haoyou.png; sourceTree = "<group>"; };
+		40C75AA52A33673A00B66207 /* tuichu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuichu.png; sourceTree = "<group>"; };
+		40CEE2CC2A308835004CED4B /* 福迪吃吃.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "福迪吃吃.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CEE2CF2A308835004CED4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		40CEE2D02A308835004CED4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		40CEE2D22A308835004CED4B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		40CEE2D32A308835004CED4B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		40CEE2D92A308835004CED4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40CEE2DB2A308836004CED4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40CEE2DE2A308836004CED4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40CEE2E02A308836004CED4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40CEE2E12A308836004CED4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40CEE2E72A308836004CED4B /* 福迪吃吃Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "福迪吃吃Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CEE2EB2A308836004CED4B /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		40CEE2F12A308836004CED4B /* 福迪吃吃UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "福迪吃吃UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CEE2F52A308836004CED4B /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
+		40CEE2F72A308836004CED4B /* ____UITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITestsLaunchTests.m"; sourceTree = "<group>"; };
+		5C5AB2D90BF1A8F4FCF84213 /* Pods-福迪吃吃.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-福迪吃吃.debug.xcconfig"; path = "Target Support Files/Pods-福迪吃吃/Pods-福迪吃吃.debug.xcconfig"; sourceTree = "<group>"; };
+		AF39B4D83D9BDD4E324C7D6B /* libPods-福迪吃吃.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-福迪吃吃.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C570EAEC684B999B9EB42C90 /* Pods-福迪吃吃.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-福迪吃吃.release.xcconfig"; path = "Target Support Files/Pods-福迪吃吃/Pods-福迪吃吃.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40CEE2C92A308835004CED4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0225734E71E530B636D81C /* libPods-福迪吃吃.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CEE2E42A308836004CED4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CEE2EE2A308836004CED4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40682AF02A320D9C0014DDB7 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				40682AF12A320DFC0014DDB7 /* Sign_in_ViewController.h */,
+				40682AF22A320DFC0014DDB7 /* Sign_in_ViewController.m */,
+				40682AF42A320E0D0014DDB7 /* Sign_up_ViewController.h */,
+				40682AF52A320E0D0014DDB7 /* Sign_up_ViewController.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		40682AF72A3223A50014DDB7 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				40C75A9C2A3334C400B66207 /* InGame */,
+				40682AF82A3223B40014DDB7 /* InSign */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		40682AF82A3223B40014DDB7 /* InSign */ = {
+			isa = PBXGroup;
+			children = (
+				40C75A9A2A3334BF00B66207 /* xiangyoujiantou.png */,
+			);
+			path = InSign;
+			sourceTree = "<group>";
+		};
+		40C75A902A332FE300B66207 /* FoddyGame */ = {
+			isa = PBXGroup;
+			children = (
+				40C75A942A33307300B66207 /* FoddyController.h */,
+				40C75A952A33307300B66207 /* FoddyController.m */,
+				40C75A972A33309800B66207 /* FoddyView.h */,
+				40C75A982A33309800B66207 /* FoddyView.m */,
+			);
+			path = FoddyGame;
+			sourceTree = "<group>";
+		};
+		40C75A9C2A3334C400B66207 /* InGame */ = {
+			isa = PBXGroup;
+			children = (
+				40C75A9D2A33659900B66207 /* state.png */,
+				40682AF92A3223DF0014DDB7 /* background.png */,
+				40C75A9F2A3365F100B66207 /* weiyang.png */,
+				40C75AA12A3365F500B66207 /* zhuangban.png */,
+				40C75AA32A3365F900B66207 /* haoyou.png */,
+				40C75AA52A33673A00B66207 /* tuichu.png */,
+			);
+			path = InGame;
+			sourceTree = "<group>";
+		};
+		40CEE2C32A308835004CED4B = {
+			isa = PBXGroup;
+			children = (
+				40682AF72A3223A50014DDB7 /* images */,
+				40CEE2CE2A308835004CED4B /* 福迪吃吃 */,
+				40CEE2EA2A308836004CED4B /* 福迪吃吃Tests */,
+				40CEE2F42A308836004CED4B /* 福迪吃吃UITests */,
+				40CEE2CD2A308835004CED4B /* Products */,
+				540B0950CE652C3673B94E18 /* Pods */,
+				4184EB54DFD0BC9CBDAD7A81 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		40CEE2CD2A308835004CED4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40CEE2CC2A308835004CED4B /* 福迪吃吃.app */,
+				40CEE2E72A308836004CED4B /* 福迪吃吃Tests.xctest */,
+				40CEE2F12A308836004CED4B /* 福迪吃吃UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40CEE2CE2A308835004CED4B /* 福迪吃吃 */ = {
+			isa = PBXGroup;
+			children = (
+				40CEE2CF2A308835004CED4B /* AppDelegate.h */,
+				40CEE2D02A308835004CED4B /* AppDelegate.m */,
+				40CEE2D22A308835004CED4B /* SceneDelegate.h */,
+				40CEE2D32A308835004CED4B /* SceneDelegate.m */,
+				40C75A902A332FE300B66207 /* FoddyGame */,
+				40682AF02A320D9C0014DDB7 /* Account */,
+				40CEE2D82A308835004CED4B /* Main.storyboard */,
+				40CEE2DB2A308836004CED4B /* Assets.xcassets */,
+				40CEE2DD2A308836004CED4B /* LaunchScreen.storyboard */,
+				40CEE2E02A308836004CED4B /* Info.plist */,
+				40CEE2E12A308836004CED4B /* main.m */,
+			);
+			path = "福迪吃吃";
+			sourceTree = "<group>";
+		};
+		40CEE2EA2A308836004CED4B /* 福迪吃吃Tests */ = {
+			isa = PBXGroup;
+			children = (
+				40CEE2EB2A308836004CED4B /* ____Tests.m */,
+			);
+			path = "福迪吃吃Tests";
+			sourceTree = "<group>";
+		};
+		40CEE2F42A308836004CED4B /* 福迪吃吃UITests */ = {
+			isa = PBXGroup;
+			children = (
+				40CEE2F52A308836004CED4B /* ____UITests.m */,
+				40CEE2F72A308836004CED4B /* ____UITestsLaunchTests.m */,
+			);
+			path = "福迪吃吃UITests";
+			sourceTree = "<group>";
+		};
+		4184EB54DFD0BC9CBDAD7A81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF39B4D83D9BDD4E324C7D6B /* libPods-福迪吃吃.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		540B0950CE652C3673B94E18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C5AB2D90BF1A8F4FCF84213 /* Pods-福迪吃吃.debug.xcconfig */,
+				C570EAEC684B999B9EB42C90 /* Pods-福迪吃吃.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40CEE2CB2A308835004CED4B /* 福迪吃吃 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40CEE2FB2A308836004CED4B /* Build configuration list for PBXNativeTarget "福迪吃吃" */;
+			buildPhases = (
+				BE8FD94410FB7AFC57AD2923 /* [CP] Check Pods Manifest.lock */,
+				40CEE2C82A308835004CED4B /* Sources */,
+				40CEE2C92A308835004CED4B /* Frameworks */,
+				40CEE2CA2A308835004CED4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "福迪吃吃";
+			productName = "福迪吃吃";
+			productReference = 40CEE2CC2A308835004CED4B /* 福迪吃吃.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40CEE2E62A308836004CED4B /* 福迪吃吃Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40CEE2FE2A308836004CED4B /* Build configuration list for PBXNativeTarget "福迪吃吃Tests" */;
+			buildPhases = (
+				40CEE2E32A308836004CED4B /* Sources */,
+				40CEE2E42A308836004CED4B /* Frameworks */,
+				40CEE2E52A308836004CED4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40CEE2E92A308836004CED4B /* PBXTargetDependency */,
+			);
+			name = "福迪吃吃Tests";
+			productName = "福迪吃吃Tests";
+			productReference = 40CEE2E72A308836004CED4B /* 福迪吃吃Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		40CEE2F02A308836004CED4B /* 福迪吃吃UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40CEE3012A308836004CED4B /* Build configuration list for PBXNativeTarget "福迪吃吃UITests" */;
+			buildPhases = (
+				40CEE2ED2A308836004CED4B /* Sources */,
+				40CEE2EE2A308836004CED4B /* Frameworks */,
+				40CEE2EF2A308836004CED4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40CEE2F32A308836004CED4B /* PBXTargetDependency */,
+			);
+			name = "福迪吃吃UITests";
+			productName = "福迪吃吃UITests";
+			productReference = 40CEE2F12A308836004CED4B /* 福迪吃吃UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40CEE2C42A308835004CED4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					40CEE2CB2A308835004CED4B = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					40CEE2E62A308836004CED4B = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 40CEE2CB2A308835004CED4B;
+					};
+					40CEE2F02A308836004CED4B = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 40CEE2CB2A308835004CED4B;
+					};
+				};
+			};
+			buildConfigurationList = 40CEE2C72A308835004CED4B /* Build configuration list for PBXProject "福迪吃吃" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40CEE2C32A308835004CED4B;
+			productRefGroup = 40CEE2CD2A308835004CED4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40CEE2CB2A308835004CED4B /* 福迪吃吃 */,
+				40CEE2E62A308836004CED4B /* 福迪吃吃Tests */,
+				40CEE2F02A308836004CED4B /* 福迪吃吃UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40CEE2CA2A308835004CED4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CEE2DF2A308836004CED4B /* LaunchScreen.storyboard in Resources */,
+				40C75AA02A3365F100B66207 /* weiyang.png in Resources */,
+				40C75A9B2A3334BF00B66207 /* xiangyoujiantou.png in Resources */,
+				40CEE2DC2A308836004CED4B /* Assets.xcassets in Resources */,
+				40C75AA22A3365F500B66207 /* zhuangban.png in Resources */,
+				40C75A9E2A33659900B66207 /* state.png in Resources */,
+				40C75AA42A3365F900B66207 /* haoyou.png in Resources */,
+				40C75AA62A33673A00B66207 /* tuichu.png in Resources */,
+				40CEE2DA2A308835004CED4B /* Main.storyboard in Resources */,
+				40682AFA2A3223DF0014DDB7 /* background.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CEE2E52A308836004CED4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CEE2EF2A308836004CED4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE8FD94410FB7AFC57AD2923 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-福迪吃吃-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40CEE2C82A308835004CED4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CEE2D12A308835004CED4B /* AppDelegate.m in Sources */,
+				40682AF62A320E0D0014DDB7 /* Sign_up_ViewController.m in Sources */,
+				40C75A992A33309800B66207 /* FoddyView.m in Sources */,
+				40CEE2E22A308836004CED4B /* main.m in Sources */,
+				40CEE2D42A308835004CED4B /* SceneDelegate.m in Sources */,
+				40C75A962A33307300B66207 /* FoddyController.m in Sources */,
+				40682AF32A320DFC0014DDB7 /* Sign_in_ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CEE2E32A308836004CED4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CEE2EC2A308836004CED4B /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40CEE2ED2A308836004CED4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CEE2F82A308836004CED4B /* ____UITestsLaunchTests.m in Sources */,
+				40CEE2F62A308836004CED4B /* ____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40CEE2E92A308836004CED4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40CEE2CB2A308835004CED4B /* 福迪吃吃 */;
+			targetProxy = 40CEE2E82A308836004CED4B /* PBXContainerItemProxy */;
+		};
+		40CEE2F32A308836004CED4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40CEE2CB2A308835004CED4B /* 福迪吃吃 */;
+			targetProxy = 40CEE2F22A308836004CED4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40CEE2D82A308835004CED4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40CEE2D92A308835004CED4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40CEE2DD2A308836004CED4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40CEE2DE2A308836004CED4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40CEE2F92A308836004CED4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		40CEE2FA2A308836004CED4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40CEE2FC2A308836004CED4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C5AB2D90BF1A8F4FCF84213 /* Pods-福迪吃吃.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3358MNV2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "福迪吃吃/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test1.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40CEE2FD2A308836004CED4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C570EAEC684B999B9EB42C90 /* Pods-福迪吃吃.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3358MNV2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "福迪吃吃/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test1.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40CEE2FF2A308836004CED4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3358MNV2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test1.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/福迪吃吃.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/福迪吃吃";
+			};
+			name = Debug;
+		};
+		40CEE3002A308836004CED4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3358MNV2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test1.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/福迪吃吃.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/福迪吃吃";
+			};
+			name = Release;
+		};
+		40CEE3022A308836004CED4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3358MNV2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test1.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "福迪吃吃";
+			};
+			name = Debug;
+		};
+		40CEE3032A308836004CED4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3358MNV2M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test1.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "福迪吃吃";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40CEE2C72A308835004CED4B /* Build configuration list for PBXProject "福迪吃吃" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40CEE2F92A308836004CED4B /* Debug */,
+				40CEE2FA2A308836004CED4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40CEE2FB2A308836004CED4B /* Build configuration list for PBXNativeTarget "福迪吃吃" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40CEE2FC2A308836004CED4B /* Debug */,
+				40CEE2FD2A308836004CED4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40CEE2FE2A308836004CED4B /* Build configuration list for PBXNativeTarget "福迪吃吃Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40CEE2FF2A308836004CED4B /* Debug */,
+				40CEE3002A308836004CED4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40CEE3012A308836004CED4B /* Build configuration list for PBXNativeTarget "福迪吃吃UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40CEE3022A308836004CED4B /* Debug */,
+				40CEE3032A308836004CED4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40CEE2C42A308835004CED4B /* Project object */;
+}

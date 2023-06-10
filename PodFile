@@ -1,0 +1,8 @@
+platform :ios, ‘8.0’
+target '福迪吃吃’ do
+pod 'SDWebImage'
+pod 'Masonry'
+pod 'JSONModel' 
+pod 'AFNetworking'
+pod 'FMDB'
+end
