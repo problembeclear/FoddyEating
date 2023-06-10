@@ -27,6 +27,8 @@
         make.right.equalTo(self.view).with.offset(0);
     }];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(exitToSignIn) name:@"exitToSign" object:nil];
+    
+    
 }
 
 - (void) exitToSignIn {

@@ -8,8 +8,8 @@
 #import "Sign_in_ViewController.h"
 #import "Masonry.h"
 #import "FoddyController.h"
-#define WIDTH [UIScreen mainScreen].bounds.size.width
-#define HEIGHT [UIScreen mainScreen].bounds.size.height
+#define WIDTH self.view.frame.size.width
+#define HEIGHT self.view.frame.size.height
 @interface Sign_in_ViewController ()
 
 @end
@@ -45,8 +45,8 @@
     [username mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(240);
         make.height.mas_equalTo(40);
-        make.left.equalTo(self.view).with.offset(WIDTH/2.0-120.0);
-        make.top.equalTo(self.view).with.offset(HEIGHT*0.4);
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.centerY.equalTo(self.view.mas_centerY).multipliedBy(0.9);
     }];
     username.clipsToBounds = YES;
     username.layer.cornerRadius = 10;
@@ -70,8 +70,8 @@
     [password mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(240);
         make.height.mas_equalTo(40);
-        make.left.equalTo(self.view).with.offset(WIDTH/2.0-120.0);
-        make.top.equalTo(self.view).with.offset(HEIGHT*0.5);
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.centerY.equalTo(self.view.mas_centerY).multipliedBy(1.2);
     }];
     password.clipsToBounds = YES;
     password.layer.cornerRadius = 10;
@@ -94,8 +94,8 @@
     [buttonEntrance mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(60);
-        make.left.equalTo(self.view).with.offset(WIDTH/2.0-30.0);
-        make.top.equalTo(self.view).with.offset(HEIGHT*0.6);
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.centerY.equalTo(self.view.mas_centerY).multipliedBy(1.5);
     }];
     [buttonEntrance setImage:[UIImage imageNamed:@"xiangyoujiantou.png"] forState:UIControlStateNormal];
     [buttonEntrance addTarget:self action:@selector(goToFoddy) forControlEvents:UIControlEventTouchUpInside];
