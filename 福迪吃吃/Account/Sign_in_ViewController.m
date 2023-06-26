@@ -7,12 +7,17 @@
 
 #import "Sign_in_ViewController.h"
 #import "Masonry.h"
-#import "FoddyController.h"
+#import "RecordViewController.h"
+#import "PublishViewController.h"
+#import "ShopViewController.h"
+#import "MineViewController.h"
+
 #define WIDTH [UIScreen mainScreen].bounds.size.width
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
 @interface Sign_in_ViewController ()
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIPageControl* pageControl;
+@property (nonatomic, strong) UITabBarController *tabController;
 @end
 
 @implementation Sign_in_ViewController
@@ -47,8 +52,6 @@
     
     
     
-    
-    
     _pageControl = [[UIPageControl alloc]init];
     [self.scrollView addSubview:_pageControl];
     [self.pageControl mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -70,7 +73,59 @@
     
     [self.scrollView addSubview:_pageControl];
     
+    RecordViewController *recordViewController = [[RecordViewController alloc] init];
+    PublishViewController *publishViewController = [[PublishViewController alloc] init];
+    ShopViewController *shopViewController = [[ShopViewController alloc] init];
+    MineViewController *mineViewController = [[MineViewController alloc] init];
+    
+    recordViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"记录" image:[[UIImage imageNamed:@"记录.png"]imageWithRenderingMode: UIImageRenderingModeAlwaysOriginal]  selectedImage:[[UIImage imageNamed:@"Frame 59.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    
 
+    publishViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发布" image:[[UIImage imageNamed:@"美食.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Frame 61.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    shopViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"商场" image:[[UIImage imageNamed:@"商场.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Ellipse 94.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    mineViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:[[UIImage imageNamed:@"我的.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Ellipse 94.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    
+    NSDictionary *recordNomal = [NSDictionary dictionaryWithObject: [UIColor grayColor] forKey:NSForegroundColorAttributeName];
+    NSDictionary *recordSelected = [NSDictionary dictionaryWithObject:[UIColor colorWithRed:107/255.0 green:68/255.0 blue:255/255.0 alpha:1.0] forKey:NSForegroundColorAttributeName];
+    [[UITabBarItem appearance] setTitleTextAttributes:recordNomal forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:recordSelected forState:UIControlStateSelected];
+    
+    
+    UINavigationController *record = [[UINavigationController alloc] initWithRootViewController:recordViewController];
+    UINavigationController *publish = [[UINavigationController alloc] initWithRootViewController:publishViewController];
+    UINavigationController *shop = [[UINavigationController alloc] initWithRootViewController:shopViewController];
+    UINavigationController *mine = [[UINavigationController alloc] initWithRootViewController:mineViewController];
+    
+    UINavigationBarAppearance* appear = [[UINavigationBarAppearance alloc] init];
+    [appear configureWithOpaqueBackground];
+    appear.backgroundColor = [UIColor whiteColor];
+    appear.shadowColor = [UIColor purpleColor];
+    
+    record.navigationBar.standardAppearance = appear;
+    record.navigationBar.scrollEdgeAppearance = appear;
+    
+    publish.navigationBar.standardAppearance = appear;
+    publish.navigationBar.scrollEdgeAppearance = appear;
+    
+    shop.navigationBar.standardAppearance = appear;
+    shop.navigationBar.scrollEdgeAppearance = appear;
+    
+    mine.navigationBar.standardAppearance = appear;
+    mine.navigationBar.scrollEdgeAppearance = appear;
+    
+    NSArray *arrayForTabbar = @[record, publish, shop, mine];
+    
+
+    _tabController = [[UITabBarController alloc] init];
+    _tabController.viewControllers = arrayForTabbar;
+    //背景色
+    _tabController.tabBar.backgroundColor = [UIColor whiteColor];
+    //透明度
+    _tabController.tabBar.translucent = NO;
+    //呈现风格
+    _tabController.modalPresentationStyle = UIModalPresentationFullScreen;
+    //初始所在界面
+    _tabController.selectedIndex = 0;
 }
 - (void) labelTitle {
     UILabel* labelParents = [[UILabel alloc] init];
@@ -79,13 +134,13 @@
     
 }
 - (UIImageView*) imageViewOnly {
-    UIImageView *imageViewOnly = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
+    UIImageView *imageViewOnly = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Ellipse 2.png"]];
     [self.scrollView addSubview:imageViewOnly];
     [imageViewOnly mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(120);
         make.height.mas_equalTo(120);
         make.left.equalTo(self.scrollView).with.offset(WIDTH/2.0-60.0);
-        make.top.equalTo(self.scrollView).with.offset(HEIGHT*0.2);
+        make.top.equalTo(self.scrollView).with.offset(HEIGHT*0.1);
     }];
     return imageViewOnly;
 }
@@ -97,7 +152,7 @@
         make.width.mas_equalTo(240);
         make.height.mas_equalTo(40);
         make.centerX.equalTo(self.scrollView.mas_centerX);
-        make.centerY.equalTo(self.scrollView.mas_centerY).multipliedBy(0.9);
+        make.centerY.equalTo(self.scrollView.mas_centerY).multipliedBy(0.7);
     }];
     username.clipsToBounds = YES;
     username.layer.cornerRadius = 10;
@@ -122,7 +177,7 @@
         make.width.mas_equalTo(240);
         make.height.mas_equalTo(40);
         make.centerX.equalTo(self.scrollView.mas_centerX);
-        make.centerY.equalTo(self.scrollView.mas_centerY).multipliedBy(1.2);
+        make.centerY.equalTo(self.scrollView.mas_centerY).multipliedBy(0.9);
     }];
     password.clipsToBounds = YES;
     password.layer.cornerRadius = 10;
@@ -154,15 +209,9 @@
 }
 
 - (void) goToFoddy {
-    FoddyController* foddyController = [[FoddyController alloc] init];
-    foddyController.modalPresentationStyle = UIModalPresentationFullScreen;
-    foddyController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-
-    [self presentViewController:foddyController animated:YES completion:nil];
     
-    NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeLeft];
-    [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
-
+    
+    [self presentViewController:_tabController animated:YES completion:nil];
 }
 
 @end
