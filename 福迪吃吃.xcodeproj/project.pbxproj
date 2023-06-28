@@ -23,6 +23,23 @@
 		40C787122A49CF4D00AA447F /* Frame 61.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C787112A49CF4D00AA447F /* Frame 61.png */; };
 		40C787142A49CF5200AA447F /* Frame 59.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C787132A49CF5200AA447F /* Frame 59.png */; };
 		40C787162A49D49E00AA447F /* Ellipse 94.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C787152A49D49E00AA447F /* Ellipse 94.png */; };
+		40C787192A4AE84D00AA447F /* backImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C787182A4AE84D00AA447F /* backImage.png */; };
+		40C787232A4AEA2C00AA447F /* Frame 67.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C7871B2A4AEA2C00AA447F /* Frame 67.png */; };
+		40C787242A4AEA2C00AA447F /* Frame 66.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C7871C2A4AEA2C00AA447F /* Frame 66.png */; };
+		40C787252A4AEA2C00AA447F /* Frame 64.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C7871D2A4AEA2C00AA447F /* Frame 64.png */; };
+		40C787262A4AEA2C00AA447F /* Frame 65.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C7871E2A4AEA2C00AA447F /* Frame 65.png */; };
+		40C787272A4AEA2C00AA447F /* Frame 62.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C7871F2A4AEA2C00AA447F /* Frame 62.png */; };
+		40C787282A4AEA2C00AA447F /* Frame 63.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C787202A4AEA2C00AA447F /* Frame 63.png */; };
+		40C787292A4AEA2C00AA447F /* Frame 68.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C787212A4AEA2C00AA447F /* Frame 68.png */; };
+		40C7872A2A4AEA2C00AA447F /* Frame 69.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C787222A4AEA2C00AA447F /* Frame 69.png */; };
+		40C7872D2A4AECDE00AA447F /* PublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C7872C2A4AECDE00AA447F /* PublishView.m */; };
+		40C7872F2A4B116400AA447F /* Frame 32.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C7872E2A4B116400AA447F /* Frame 32.png */; };
+		40C787312A4B116900AA447F /* Frame 31.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C787302A4B116900AA447F /* Frame 31.png */; };
+		40C787352A4B1F5100AA447F /* SelectFoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C787342A4B1F5100AA447F /* SelectFoodViewController.m */; };
+		40C787372A4B262400AA447F /* 返回 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C787362A4B262400AA447F /* 返回 5.png */; };
+		40C787392A4B262900AA447F /* 搜索 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C787382A4B262900AA447F /* 搜索 1.png */; };
+		40C7873B2A4B262E00AA447F /* Rectangle 125.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C7873A2A4B262E00AA447F /* Rectangle 125.png */; };
+		40C7873D2A4B263100AA447F /* Rectangle 126.png in Resources */ = {isa = PBXBuildFile; fileRef = 40C7873C2A4B263100AA447F /* Rectangle 126.png */; };
 		40CEE2D12A308835004CED4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CEE2D02A308835004CED4B /* AppDelegate.m */; };
 		40CEE2D42A308835004CED4B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CEE2D32A308835004CED4B /* SceneDelegate.m */; };
 		40CEE2DA2A308835004CED4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CEE2D82A308835004CED4B /* Main.storyboard */; };
@@ -73,6 +90,25 @@
 		40C787112A49CF4D00AA447F /* Frame 61.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Frame 61.png"; sourceTree = "<group>"; };
 		40C787132A49CF5200AA447F /* Frame 59.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Frame 59.png"; sourceTree = "<group>"; };
 		40C787152A49D49E00AA447F /* Ellipse 94.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ellipse 94.png"; sourceTree = "<group>"; };
+		40C787182A4AE84D00AA447F /* backImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backImage.png; sourceTree = "<group>"; };
+		40C7871B2A4AEA2C00AA447F /* Frame 67.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Frame 67.png"; sourceTree = "<group>"; };
+		40C7871C2A4AEA2C00AA447F /* Frame 66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Frame 66.png"; sourceTree = "<group>"; };
+		40C7871D2A4AEA2C00AA447F /* Frame 64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Frame 64.png"; sourceTree = "<group>"; };
+		40C7871E2A4AEA2C00AA447F /* Frame 65.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Frame 65.png"; sourceTree = "<group>"; };
+		40C7871F2A4AEA2C00AA447F /* Frame 62.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Frame 62.png"; sourceTree = "<group>"; };
+		40C787202A4AEA2C00AA447F /* Frame 63.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Frame 63.png"; sourceTree = "<group>"; };
+		40C787212A4AEA2C00AA447F /* Frame 68.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Frame 68.png"; sourceTree = "<group>"; };
+		40C787222A4AEA2C00AA447F /* Frame 69.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Frame 69.png"; sourceTree = "<group>"; };
+		40C7872B2A4AECDE00AA447F /* PublishView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublishView.h; sourceTree = "<group>"; };
+		40C7872C2A4AECDE00AA447F /* PublishView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublishView.m; sourceTree = "<group>"; };
+		40C7872E2A4B116400AA447F /* Frame 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Frame 32.png"; sourceTree = "<group>"; };
+		40C787302A4B116900AA447F /* Frame 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Frame 31.png"; sourceTree = "<group>"; };
+		40C787332A4B1F5100AA447F /* SelectFoodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectFoodViewController.h; sourceTree = "<group>"; };
+		40C787342A4B1F5100AA447F /* SelectFoodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectFoodViewController.m; sourceTree = "<group>"; };
+		40C787362A4B262400AA447F /* 返回 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回 5.png"; sourceTree = "<group>"; };
+		40C787382A4B262900AA447F /* 搜索 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "搜索 1.png"; sourceTree = "<group>"; };
+		40C7873A2A4B262E00AA447F /* Rectangle 125.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 125.png"; sourceTree = "<group>"; };
+		40C7873C2A4B263100AA447F /* Rectangle 126.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 126.png"; sourceTree = "<group>"; };
 		40CEE2CC2A308835004CED4B /* 福迪吃吃.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "福迪吃吃.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CEE2CF2A308835004CED4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		40CEE2D02A308835004CED4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -133,6 +169,8 @@
 		40682AF72A3223A50014DDB7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				40C787322A4B1CE300AA447F /* InPublish */,
+				40C787172A4AE83000AA447F /* InRecord */,
 				40C787062A49CB5800AA447F /* InMain */,
 				40682AF82A3223B40014DDB7 /* InSign */,
 			);
@@ -162,6 +200,10 @@
 			children = (
 				40C786FD2A49C32D00AA447F /* PublishViewController.h */,
 				40C786FE2A49C32D00AA447F /* PublishViewController.m */,
+				40C7872B2A4AECDE00AA447F /* PublishView.h */,
+				40C7872C2A4AECDE00AA447F /* PublishView.m */,
+				40C787332A4B1F5100AA447F /* SelectFoodViewController.h */,
+				40C787342A4B1F5100AA447F /* SelectFoodViewController.m */,
 			);
 			path = Publish;
 			sourceTree = "<group>";
@@ -198,9 +240,46 @@
 			path = InMain;
 			sourceTree = "<group>";
 		};
+		40C787172A4AE83000AA447F /* InRecord */ = {
+			isa = PBXGroup;
+			children = (
+				40C787182A4AE84D00AA447F /* backImage.png */,
+			);
+			path = InRecord;
+			sourceTree = "<group>";
+		};
+		40C7871A2A4AEA2C00AA447F /* 家长导航栏icon */ = {
+			isa = PBXGroup;
+			children = (
+				40C7871B2A4AEA2C00AA447F /* Frame 67.png */,
+				40C7871C2A4AEA2C00AA447F /* Frame 66.png */,
+				40C7871D2A4AEA2C00AA447F /* Frame 64.png */,
+				40C7871E2A4AEA2C00AA447F /* Frame 65.png */,
+				40C7871F2A4AEA2C00AA447F /* Frame 62.png */,
+				40C787202A4AEA2C00AA447F /* Frame 63.png */,
+				40C787212A4AEA2C00AA447F /* Frame 68.png */,
+				40C787222A4AEA2C00AA447F /* Frame 69.png */,
+			);
+			path = "家长导航栏icon";
+			sourceTree = "<group>";
+		};
+		40C787322A4B1CE300AA447F /* InPublish */ = {
+			isa = PBXGroup;
+			children = (
+				40C7873C2A4B263100AA447F /* Rectangle 126.png */,
+				40C7873A2A4B262E00AA447F /* Rectangle 125.png */,
+				40C787382A4B262900AA447F /* 搜索 1.png */,
+				40C787362A4B262400AA447F /* 返回 5.png */,
+				40C787302A4B116900AA447F /* Frame 31.png */,
+				40C7872E2A4B116400AA447F /* Frame 32.png */,
+			);
+			path = InPublish;
+			sourceTree = "<group>";
+		};
 		40CEE2C32A308835004CED4B = {
 			isa = PBXGroup;
 			children = (
+				40C7871A2A4AEA2C00AA447F /* 家长导航栏icon */,
 				40682AF72A3223A50014DDB7 /* images */,
 				40CEE2CE2A308835004CED4B /* 福迪吃吃 */,
 				40CEE2EA2A308836004CED4B /* 福迪吃吃Tests */,
@@ -384,14 +463,29 @@
 				40C787142A49CF5200AA447F /* Frame 59.png in Resources */,
 				40C787122A49CF4D00AA447F /* Frame 61.png in Resources */,
 				40C7870E2A49CB9F00AA447F /* 我的.png in Resources */,
+				40C787252A4AEA2C00AA447F /* Frame 64.png in Resources */,
 				40C75A9B2A3334BF00B66207 /* xiangyoujiantou.png in Resources */,
+				40C787272A4AEA2C00AA447F /* Frame 62.png in Resources */,
+				40C787232A4AEA2C00AA447F /* Frame 67.png in Resources */,
+				40C787282A4AEA2C00AA447F /* Frame 63.png in Resources */,
+				40C787242A4AEA2C00AA447F /* Frame 66.png in Resources */,
+				40C7873D2A4B263100AA447F /* Rectangle 126.png in Resources */,
+				40C787372A4B262400AA447F /* 返回 5.png in Resources */,
 				40CEE2DC2A308836004CED4B /* Assets.xcassets in Resources */,
 				40CEE2DA2A308835004CED4B /* Main.storyboard in Resources */,
+				40C7873B2A4B262E00AA447F /* Rectangle 125.png in Resources */,
 				40C7870C2A49CB9500AA447F /* 美食.png in Resources */,
+				40C787192A4AE84D00AA447F /* backImage.png in Resources */,
 				40C787162A49D49E00AA447F /* Ellipse 94.png in Resources */,
+				40C787312A4B116900AA447F /* Frame 31.png in Resources */,
 				40C787102A49CF4800AA447F /* Ellipse 2.png in Resources */,
+				40C787292A4AEA2C00AA447F /* Frame 68.png in Resources */,
 				40C7870A2A49CB9000AA447F /* 商场.png in Resources */,
+				40C787392A4B262900AA447F /* 搜索 1.png in Resources */,
+				40C7872A2A4AEA2C00AA447F /* Frame 69.png in Resources */,
+				40C787262A4AEA2C00AA447F /* Frame 65.png in Resources */,
 				40C787082A49CB8C00AA447F /* 记录.png in Resources */,
+				40C7872F2A4B116400AA447F /* Frame 32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,8 +537,10 @@
 			files = (
 				40C787022A49C34100AA447F /* ShopViewController.m in Sources */,
 				40CEE2D12A308835004CED4B /* AppDelegate.m in Sources */,
+				40C787352A4B1F5100AA447F /* SelectFoodViewController.m in Sources */,
 				40682AF62A320E0D0014DDB7 /* Sign_up_ViewController.m in Sources */,
 				40C787052A49C34B00AA447F /* MineViewController.m in Sources */,
+				40C7872D2A4AECDE00AA447F /* PublishView.m in Sources */,
 				40CEE2E22A308836004CED4B /* main.m in Sources */,
 				40C786FF2A49C32D00AA447F /* PublishViewController.m in Sources */,
 				40C786FC2A49C31C00AA447F /* RecordViewController.m in Sources */,

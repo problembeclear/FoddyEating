@@ -16,7 +16,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationController.navigationBarHidden = YES;
     self.view.backgroundColor = [UIColor whiteColor];
+    UIImageView *backImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"backImage"]];
+    backImage.frame = CGRectMake(0, 50, self.view.bounds.size.width, self.view.bounds.size.height - 133);
+    [self.view addSubview:backImage];
 }
 
 /*

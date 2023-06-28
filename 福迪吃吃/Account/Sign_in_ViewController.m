@@ -82,8 +82,8 @@
     
 
     publishViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发布" image:[[UIImage imageNamed:@"美食.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Frame 61.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    shopViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"商场" image:[[UIImage imageNamed:@"商场.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Ellipse 94.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    mineViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:[[UIImage imageNamed:@"我的.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Ellipse 94.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    shopViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"商场" image:[[UIImage imageNamed:@"商场.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Frame 68.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    mineViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:[[UIImage imageNamed:@"我的.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Frame 69.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
     NSDictionary *recordNomal = [NSDictionary dictionaryWithObject: [UIColor grayColor] forKey:NSForegroundColorAttributeName];
     NSDictionary *recordSelected = [NSDictionary dictionaryWithObject:[UIColor colorWithRed:107/255.0 green:68/255.0 blue:255/255.0 alpha:1.0] forKey:NSForegroundColorAttributeName];

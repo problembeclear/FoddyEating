@@ -6,6 +6,9 @@
 //
 
 #import "PublishViewController.h"
+#import "PublishView.h"
+#import "Masonry.h"
+#import "SelectFoodViewController.h"
 
 @interface PublishViewController ()
 
@@ -16,9 +19,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationController.navigationBarHidden = YES;
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    PublishView *publishView = [[PublishView alloc] init];
+    [publishView setSelf];
+    
+    [self.view addSubview:publishView];
+    [publishView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view).with.offset(0);
+        make.right.equalTo(self.view).with.offset(0);
+        make.top.equalTo(self.view).with.offset(0);
+        make.bottom.equalTo(self.view).with.offset(0);
+    }];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:@selector(presentPublish) name:@"presentPublish" object:nil];
 }
-
+- (void)presentPublish {
+    SelectFoodViewController *foodController = [[SelectFoodViewController alloc] init];
+    foodController.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:foodController animated:YES completion:nil];
+}     
 /*
 #pragma mark - Navigation
 
