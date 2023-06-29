@@ -48,6 +48,8 @@
     CGFloat buttonWidth = ([UIScreen mainScreen].bounds.size.width - 80.0)/4.0;
     _buttonBreakfast = [UIButton buttonWithType:UIButtonTypeCustom];
     [_buttonBreakfast setTitle:@"早餐" forState:UIControlStateNormal];
+    _buttonBreakfast.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:30];
+    [_buttonBreakfast setBackgroundImage:[UIImage imageNamed:@"Line 01.png"] forState:UIControlStateSelected];
     [_buttonBreakfast setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [_buttonBreakfast setTitleColor:[UIColor colorWithRed:107/255.0 green:68/255.0 blue:255/255.0 alpha:1.0] forState:UIControlStateSelected];
     [_buttonBreakfast addTarget:self action:@selector(buttonEvent:) forControlEvents:UIControlEventTouchUpInside];
@@ -62,6 +64,8 @@
     
     _buttonLunch = [UIButton buttonWithType:UIButtonTypeCustom];
     [_buttonLunch setTitle:@"午餐" forState:UIControlStateNormal];
+    _buttonLunch.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+    [_buttonLunch setBackgroundImage:[UIImage imageNamed:@"Line 01.png"] forState:UIControlStateSelected];
     [_buttonLunch setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [_buttonLunch setTitleColor:[UIColor colorWithRed:107/255.0 green:68/255.0 blue:255/255.0 alpha:1.0] forState:UIControlStateSelected];
     [_buttonLunch addTarget:self action:@selector(buttonEvent:) forControlEvents:UIControlEventTouchUpInside];
@@ -77,6 +81,8 @@
     
     _buttonDinner = [UIButton buttonWithType:UIButtonTypeCustom];
     [_buttonDinner setTitle:@"晚餐" forState:UIControlStateNormal];
+    _buttonDinner.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+    [_buttonDinner setBackgroundImage:[UIImage imageNamed:@"Line 01.png"] forState:UIControlStateSelected];
     [_buttonDinner setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [_buttonDinner setTitleColor:[UIColor colorWithRed:107/255.0 green:68/255.0 blue:255/255.0 alpha:1.0] forState:UIControlStateSelected];
     [_buttonDinner addTarget:self action:@selector(buttonEvent:) forControlEvents:UIControlEventTouchUpInside];
@@ -90,6 +96,8 @@
     
     _buttonAdd = [UIButton buttonWithType:UIButtonTypeCustom];
     [_buttonAdd setTitle:@"加餐" forState:UIControlStateNormal];
+    _buttonAdd.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+    [_buttonAdd setBackgroundImage:[UIImage imageNamed:@"Line 01.png"] forState:UIControlStateSelected];
     [_buttonAdd setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [_buttonAdd setTitleColor:[UIColor colorWithRed:107/255.0 green:68/255.0 blue:255/255.0 alpha:1.0] forState:UIControlStateSelected];
     [_buttonAdd addTarget:self action:@selector(buttonEvent:) forControlEvents:UIControlEventTouchUpInside];
@@ -102,53 +110,64 @@
     }];
 }
 - (void)buttonEvent:(UIButton*)button {
-    if ([button isEqual:self.buttonBreakfast]) {
-        if (button.selected == NO) {
-            self.buttonBreakfast.selected = YES;
-            self.buttonLunch.selected = NO;
-            self.buttonDinner.selected = NO;
-            self.buttonAdd.selected = NO;
-        }
+    if ([button isEqual:self.buttonBreakfast] && button.selected == NO) {
+        self.buttonBreakfast.selected = YES;
+        self.buttonBreakfast.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:30];
+        self.buttonLunch.selected = NO;
+        self.buttonLunch.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+        self.buttonDinner.selected = NO;
+        self.buttonDinner.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+        self.buttonAdd.selected = NO;
+        self.buttonAdd.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+        [self.scrollViewMeal setContentOffset:CGPointMake(0, 0)];
         
-    } else if ([button isEqual:self.buttonLunch]) {
-        if (button.selected == NO) {
-            self.buttonBreakfast.selected = NO;
-            self.buttonLunch.selected = YES;
-            self.buttonDinner.selected = NO;
-            self.buttonAdd.selected = NO;
-        }
+    } else if ([button isEqual:self.buttonLunch] && button.selected == NO) {
+        self.buttonBreakfast.selected = NO;
+        self.buttonBreakfast.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+        self.buttonLunch.selected = YES;
+        self.buttonLunch.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:30];
+        self.buttonDinner.selected = NO;
+        self.buttonDinner.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+        self.buttonAdd.selected = NO;
+        self.buttonAdd.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+        [self.scrollViewMeal setContentOffset:CGPointMake((WIDTH-100)*1+50-30, 0)];
         
-    } else if ([button isEqual:self.buttonDinner]) {
-        if (button.selected == NO) {
-            self.buttonBreakfast.selected = NO;
-            self.buttonLunch.selected = NO;
-            self.buttonDinner.selected = YES;
-            self.buttonAdd.selected = NO;
-        }
+    } else if ([button isEqual:self.buttonDinner] && button.selected == NO) {
+        self.buttonBreakfast.selected = NO;
+        self.buttonBreakfast.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+        self.buttonLunch.selected = NO;
+        self.buttonLunch.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+        self.buttonDinner.selected = YES;
+        self.buttonDinner.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:30];
+        self.buttonAdd.selected = NO;
+        self.buttonAdd.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+        [self.scrollViewMeal setContentOffset:CGPointMake((WIDTH-100)*2+70-30, 0)];
         
-    } else {
-        if (button.selected == NO) {
-            self.buttonBreakfast.selected = NO;
-            self.buttonLunch.selected = NO;
-            self.buttonDinner.selected = NO;
-            self.buttonAdd.selected = YES;
-        }
-        
+    } else if ([button isEqual:self.buttonAdd] && button.selected == NO){
+        self.buttonBreakfast.selected = NO;
+        self.buttonBreakfast.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+        self.buttonLunch.selected = NO;
+        self.buttonLunch.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+        self.buttonDinner.selected = NO;
+        self.buttonDinner.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:20];
+        self.buttonAdd.selected = YES;
+        self.buttonAdd.titleLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:30];
+        [self.scrollViewMeal setContentOffset:CGPointMake((WIDTH-100)*3+90-30, 0)];
     }
 }
 - (void)setScrollView {
     self.scrollViewMeal = [[UIScrollView alloc] init];
-    
+    self.scrollViewMeal.delegate = self;
     self.scrollViewMeal.frame = CGRectMake(0, 170, WIDTH, 500);
     [self addSubview:_scrollViewMeal];
     
     _scrollViewMeal.showsVerticalScrollIndicator = NO;
-    _scrollViewMeal.showsHorizontalScrollIndicator = NO;
+    _scrollViewMeal.showsHorizontalScrollIndicator = YES;
     _scrollViewMeal.alwaysBounceVertical = NO;
     _scrollViewMeal.alwaysBounceHorizontal = NO;
     _scrollViewMeal.scrollEnabled = YES;
-    _scrollViewMeal.pagingEnabled = YES;
-    _scrollViewMeal.contentSize = CGSizeMake(WIDTH * 4 - 310, 0);
+    _scrollViewMeal.pagingEnabled = NO;
+    _scrollViewMeal.contentSize = CGSizeMake((WIDTH-100)*4 + 160, 0);
     
     UIImageView *imageBreakfast = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Frame 32.png"]];
     [_scrollViewMeal addSubview:imageBreakfast];
@@ -168,7 +187,7 @@
         make.height.mas_equalTo(440);
     }];
     
-    UIImageView *imageDinner = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Frame 32.png"]];
+    UIImageView *imageDinner = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Frame 74.png"]];
     [_scrollViewMeal addSubview:imageDinner];
     [imageDinner mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(imageLunch.mas_right).with.offset(20);
@@ -177,7 +196,7 @@
         make.height.mas_equalTo(440);
     }];
     
-    UIImageView *imageAdd = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Frame 31.png"]];
+    UIImageView *imageAdd = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Group 31.png"]];
     [_scrollViewMeal addSubview:imageAdd];
     [imageAdd mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(imageDinner.mas_right).with.offset(20);
@@ -200,6 +219,23 @@
     [imageAdd addGestureRecognizer:singleTap4];
     
 }
+
+
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    if (scrollView.contentOffset.x >= ((WIDTH-100)*3+90-60) ) {
+        [self buttonEvent:self.buttonAdd];
+    } else if (scrollView.contentOffset.x >= ((WIDTH-100)*2+70-60) ) {
+        [self buttonEvent:self.buttonDinner];
+    } else if (scrollView.contentOffset.x >= ((WIDTH-100)*1+50-60) ) {
+        [self buttonEvent:self.buttonLunch];
+    } else  {
+        [self buttonEvent:self.buttonBreakfast];
+    }
+
+}
+
+
 - (void)handleSingleTap1 {
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"presentPublish" object:nil];
@@ -216,15 +252,6 @@
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"presentPublish" object:nil];
 }
-
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    
-}
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    
-}
-
 - (void)getInPublish {
     
 }

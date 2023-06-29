@@ -40,7 +40,7 @@
     self.scrollView.frame = CGRectMake(0, 0, WIDTH, HEIGHT);
     self.scrollView.contentSize = CGSizeMake(WIDTH*2, 0);
     [self.view addSubview:_scrollView];
-    _scrollView.delegate = self;
+    self.scrollView.delegate = self;
     
     self.scrollView.showsVerticalScrollIndicator = NO;
     self.scrollView.showsHorizontalScrollIndicator = NO;
@@ -80,7 +80,6 @@
     
     recordViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"记录" image:[[UIImage imageNamed:@"记录.png"]imageWithRenderingMode: UIImageRenderingModeAlwaysOriginal]  selectedImage:[[UIImage imageNamed:@"Frame 59.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
-
     publishViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发布" image:[[UIImage imageNamed:@"美食.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Frame 61.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     shopViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"商场" image:[[UIImage imageNamed:@"商场.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Frame 68.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     mineViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:[[UIImage imageNamed:@"我的.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Frame 69.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
