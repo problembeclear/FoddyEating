@@ -18,6 +18,8 @@
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIPageControl* pageControl;
 @property (nonatomic, strong) UITabBarController *tabController;
+@property (nonatomic, strong) UITextField *password;
+@property (nonatomic, strong) UITextField *username;
 @end
 
 @implementation Sign_in_ViewController
@@ -33,6 +35,8 @@
     [self textFieldUsername];
     [self textFieldPassword];
     [self buttonEntrance];
+    [self buttonSignUpAndModify];
+    [self buttonAccept];
     
 }
 - (void) initScrollView {
@@ -144,54 +148,102 @@
     return imageViewOnly;
 }
 - (UITextField*) textFieldUsername {
-    UITextField *username = [[UITextField alloc] init];
-    username.backgroundColor = [UIColor whiteColor];
-    [self.scrollView addSubview:username];
-    [username mas_makeConstraints:^(MASConstraintMaker *make) {
+    _username = [[UITextField alloc] init];
+    _username.backgroundColor = [UIColor whiteColor];
+    [self.scrollView addSubview:_username];
+    [_username mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(240);
         make.height.mas_equalTo(40);
         make.centerX.equalTo(self.scrollView.mas_centerX);
         make.centerY.equalTo(self.scrollView.mas_centerY).multipliedBy(0.7);
     }];
-    username.clipsToBounds = YES;
-    username.layer.cornerRadius = 10;
+    _username.clipsToBounds = YES;
+    _username.layer.cornerRadius = 10;
+    _username.textAlignment = NSTextAlignmentCenter;
+    _username.delegate = self;
+    _username.returnKeyType = UIReturnKeyDone;
+    
     UILabel *labelUsername = [[UILabel alloc] init];
     labelUsername.text = @"账 号";
+    labelUsername.font = [UIFont boldSystemFontOfSize:20];
     labelUsername.textColor = [UIColor whiteColor];
     [self.scrollView addSubview:labelUsername];
     [labelUsername mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(80);
         make.height.mas_equalTo(20);
-        make.left.equalTo(username).with.offset(0);
-        make.bottom.equalTo(username).with.offset(-50);
+        make.left.equalTo(self.username).with.offset(0);
+        make.bottom.equalTo(self.username).with.offset(-50);
     }];
-    return username;
+    return self.username;
 }
 
 - (UITextField*) textFieldPassword {
-    UITextField *password = [[UITextField alloc] init];
-    password.backgroundColor = [UIColor whiteColor];
-    [self.scrollView addSubview:password];
-    [password mas_makeConstraints:^(MASConstraintMaker *make) {
+    _password = [[UITextField alloc] init];
+    _password.backgroundColor = [UIColor whiteColor];
+    [self.scrollView addSubview:_password];
+    [_password mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(240);
         make.height.mas_equalTo(40);
         make.centerX.equalTo(self.scrollView.mas_centerX);
         make.centerY.equalTo(self.scrollView.mas_centerY).multipliedBy(0.9);
     }];
-    password.clipsToBounds = YES;
-    password.layer.cornerRadius = 10;
+    _password.clipsToBounds = YES;
+    _password.layer.cornerRadius = 10;
+    _password.textAlignment = NSTextAlignmentCenter;
+    [_password setSecureTextEntry:YES];
+    _password.delegate = self;
+    _password.returnKeyType = UIReturnKeyDone;
     
     UILabel *labelPassword = [[UILabel alloc] init];
     labelPassword.text = @"密 码";
+    labelPassword.font = [UIFont boldSystemFontOfSize:20];
     labelPassword.textColor = [UIColor whiteColor];
     [self.scrollView addSubview:labelPassword];
     [labelPassword mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(80);
         make.height.mas_equalTo(20);
-        make.left.equalTo(password).with.offset(0);
-        make.bottom.equalTo(password).with.offset(-50);
+        make.left.equalTo(self.password).with.offset(0);
+        make.bottom.equalTo(self.password).with.offset(-50);
     }];
-    return password;
+    return self.password;
+}
+- (void)buttonSignUpAndModify {
+    UIButton *buttonSignUp = [UIButton buttonWithType:UIButtonTypeCustom];
+    [buttonSignUp setTitle:@"快速注册" forState:UIControlStateNormal];
+    [buttonSignUp setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.scrollView addSubview:buttonSignUp];
+    [buttonSignUp mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.password.mas_left).with.offset(5);
+        make.top.equalTo(self.password.mas_bottom).with.offset(10);
+        make.width.equalTo(@90);
+        make.height.equalTo(@30);
+    }];
+    
+    UIButton *buttonModify = [UIButton buttonWithType:UIButtonTypeCustom];
+    [buttonModify setTitle:@"忘记密码" forState:UIControlStateNormal];
+    [buttonModify setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.scrollView addSubview:buttonModify];
+    [buttonModify mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.password.mas_right).with.offset(-5);
+        make.top.equalTo(self.password.mas_bottom).with.offset(10);
+        make.width.equalTo(@90);
+        make.height.equalTo(@30);
+    }];
+}
+- (void)buttonAccept {
+    UIButton *buttonAccept = [UIButton buttonWithType:UIButtonTypeCustom];
+    [buttonAccept setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+    [buttonAccept setImage:[UIImage imageNamed:@"Ellipse 52.png"] forState:UIControlStateSelected];
+    [buttonAccept setTitle:@"已阅读并同意服务协议和隐私保护指引" forState:UIControlStateNormal];
+    buttonAccept.titleLabel.font = [UIFont systemFontOfSize:12];
+    [self.scrollView addSubview:buttonAccept];
+    [buttonAccept mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view.mas_centerX).multipliedBy(1.0);
+        make.top.equalTo(self.password.mas_bottom).with.offset(50);
+        make.width.mas_equalTo(240);
+        make.height.equalTo(@30);
+    }];
+    buttonAccept.selected = YES;
 }
 - (UIButton*) buttonEntrance {
     UIButton *buttonEntrance = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -209,8 +261,15 @@
 
 - (void) goToFoddy {
     
-    
     [self presentViewController:_tabController animated:YES completion:nil];
 }
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    //使虚拟键盘回收
+    [self.username resignFirstResponder];
+    [self.password resignFirstResponder];
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
 @end

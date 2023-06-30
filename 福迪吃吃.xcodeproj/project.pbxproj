@@ -28,6 +28,7 @@
 		40D00AB02A4C5E87004A46B8 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D00AAF2A4C5E87004A46B8 /* MenuViewController.m */; };
 		40D00AB72A4D8673004A46B8 /* LabelFoodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D00AB62A4D8673004A46B8 /* LabelFoodView.m */; };
 		40D00AC22A4D9E87004A46B8 /* SuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D00AC12A4D9E87004A46B8 /* SuccessViewController.m */; };
+		40D00ADA2A4EE919004A46B8 /* Ellipse 52.png in Resources */ = {isa = PBXBuildFile; fileRef = 40D00AD92A4EE919004A46B8 /* Ellipse 52.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		40D00AB62A4D8673004A46B8 /* LabelFoodView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelFoodView.m; sourceTree = "<group>"; };
 		40D00AC02A4D9E87004A46B8 /* SuccessViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuccessViewController.h; sourceTree = "<group>"; };
 		40D00AC12A4D9E87004A46B8 /* SuccessViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuccessViewController.m; sourceTree = "<group>"; };
+		40D00AD92A4EE919004A46B8 /* Ellipse 52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ellipse 52.png"; sourceTree = "<group>"; };
 		5C5AB2D90BF1A8F4FCF84213 /* Pods-福迪吃吃.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-福迪吃吃.debug.xcconfig"; path = "Target Support Files/Pods-福迪吃吃/Pods-福迪吃吃.debug.xcconfig"; sourceTree = "<group>"; };
 		AF39B4D83D9BDD4E324C7D6B /* libPods-福迪吃吃.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-福迪吃吃.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C570EAEC684B999B9EB42C90 /* Pods-福迪吃吃.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-福迪吃吃.release.xcconfig"; path = "Target Support Files/Pods-福迪吃吃/Pods-福迪吃吃.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		40CEE2C32A308835004CED4B = {
 			isa = PBXGroup;
 			children = (
+				40D00AD92A4EE919004A46B8 /* Ellipse 52.png */,
 				40CEE2CE2A308835004CED4B /* 福迪吃吃 */,
 				40CEE2EA2A308836004CED4B /* 福迪吃吃Tests */,
 				40CEE2F42A308836004CED4B /* 福迪吃吃UITests */,
@@ -356,6 +359,7 @@
 			files = (
 				40CEE2DF2A308836004CED4B /* LaunchScreen.storyboard in Resources */,
 				40CEE2DC2A308836004CED4B /* Assets.xcassets in Resources */,
+				40D00ADA2A4EE919004A46B8 /* Ellipse 52.png in Resources */,
 				40CEE2DA2A308835004CED4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
